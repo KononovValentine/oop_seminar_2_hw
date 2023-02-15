@@ -22,7 +22,7 @@ public class Product {
     }
 
 
-    // Сравнивает два товара по основным техническим параметрам
+    // Сравнивает два товара по имени и стоимости
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
