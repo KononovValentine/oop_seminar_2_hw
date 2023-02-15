@@ -8,6 +8,8 @@ public class Program {
         VendingMachine vendingMachine = new VendingMachine();
         vendingMachine.changePassword();
         vendingMachine.openDoor();
+        Product prod = new Product("Cola", 120.0);
+        vendingMachine.addProductByPlace("a1", 1, prod);
         for (int i = 0; i < names.length; i++) {
             Product product = new Product(
                     names[i],

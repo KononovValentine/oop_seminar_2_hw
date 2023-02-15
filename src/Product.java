@@ -20,4 +20,18 @@ public class Product {
     public String toString() {
         return "Наименование: " + this.name + ", Стоимость: " + cost;
     }
+
+
+    // Сравнивает два товара по основным техническим параметрам
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Product product)) {
+            return false;
+        }
+        return name.equals(product.name)
+                && cost == product.cost;
+    }
 }
