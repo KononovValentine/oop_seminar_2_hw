@@ -42,8 +42,8 @@ public class VendingMachine {
     // Запрашивает покупку продукта по выбранному параметру
     public void buyProduct() {
         if (!isDoorOpen) {
-            System.out.println("Введите 1 для покупки по позиции товара, 2 для покупки по имени товара, " +
-                    "3 для покупки по цене товара");
+            System.out.println("Введите 1 для покупки по позиции товара, 2 для покупки по цене товара, " +
+                    "3 для покупки по имени товара");
             int number = Integer.parseInt(scanner.nextLine());
             if (number == 1) {
                 System.out.println("Введите позицию товара из представленных: ");
